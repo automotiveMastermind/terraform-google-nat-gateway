@@ -90,7 +90,7 @@ resource "google_compute_firewall" "nat-gateway" {
 }
 
 module "nat-gateway" {
-  source             = "github.com/leeleelou/terraform-google-managed-instance-group?ref=92306"
+  source             = "github.com/leeleelou/terraform-google-managed-instance-group?ref=3.0.0"
   name               = local.name
   project            = var.project
   region             = var.region
